@@ -28,7 +28,6 @@ div.navbar-header img{
 .img {
 	margin-bottom: 50px;
 	margin-top: 0px;
-}
 
 }
 .btn {
@@ -92,9 +91,12 @@ div.navbar-header img{
 }
 #why{
 	text-align: center;
+	margin-bottom: 55px;
 }
  .rb{
- 	border-right: 1px solid #E9E9E9;
+ 	
+ 	font-size: 16px;
+ 	
  }
  .col-md-3 {
 
@@ -117,6 +119,7 @@ footer ul li a{
 }
 footer ul{
 text-align: center;
+padding-left: 0px;
 }
 footer ul li{
 	list-style: none;
@@ -165,4 +168,37 @@ footer #row2 p{
 	color:#9e9e9e;
 	font-size: 12px;
 
+}
+
+#dropdownMenu1{
+text-align: center;
+}
+.caret {
+  position: absolute;
+  right: 1%;
+  top: 45%;
+}
+ ul.nav-pills li :hover{
+
+background-color:lightblue;
+color:#fff;
+}
+#btnnl{
+padding: 0px;
+margin:  0px;
+}
+#dash_labels{
+ font-size: 20px;
+}
+#edit_btn{
+	
+	font-size:15px; 
+}
+#download_btn
+{
+	text-align: center;
+	margin-top: 10px;
+}
+#f_p a:hover{
+	font-size: 20px;
 }

@@ -30,10 +30,10 @@ div.navbar-header img{
 	margin-top: 0px;
 
 }
-.btn {
+#gs {
   display: inline-block;
   padding: 6px 12px;
-  margin-bottom: 0;
+  margin-bottom: 55px;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.42857143;
@@ -104,7 +104,9 @@ div.navbar-header img{
     text-align: center;
  }
 body{
-font-family: 'Raleway', sans-serif;}
+font-family: 'Raleway', sans-serif;
+background:linear-gradient(white,#ffdfca);
+}
 footer{
 	margin-top: 90px;
 	background-color: #000;
@@ -144,7 +146,7 @@ footer #row2 ul li {
 
 }
 footer #row2 ul li a{
-	color: blue;
+	color: lightblue;
 	margin-right:30px;
 	font-size:20px;
 
@@ -201,4 +203,31 @@ margin:  0px;
 }
 #f_p a:hover{
 	font-size: 20px;
+}
+#uj{
+	text-align: center;
+	font-size: 60px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#gl{
+	
+	
+}
+#gl{
+
+border-radius:0px;
+}
+form input{
+	border-radius: 0px !important;
+}
+#whystore{
+	text-align:center;
+}
+#icon img{
+	width: 50%;
+
+}
+#whyuj img{
+	width: 40%;
 }

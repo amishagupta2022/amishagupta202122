@@ -45,7 +45,7 @@ div.navbar-header img{
 
 #image{
 	background-image: url("78.jpg");
-	height: 450px;
+	min-height: 450px;
 
 }
 .round{
@@ -272,6 +272,7 @@ margin-top: 10px;
 	div.navbar-header a img{
 		margin-top: -23px;
 	}
+
 }
 @media only screen and (min-width: 767px){
 nav div.container-fluid ul.navbar-right li a{
@@ -301,4 +302,15 @@ margin-top: 20px;
 	margin-right: 50px;
     font-size: 30px;
 
+}
+@media only screen and (max-width: 767px) {
+	div.bor{
+		border:none;
+		text-align: center;
+	}
+	
+
+}
+.bor{
+border-right:1px dashed #666;
 }

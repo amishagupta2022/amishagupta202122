@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact_Us</title>
+  <link rel="icon" type="image/png" href="logo.png">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,700,600' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter=new google.maps.LatLng(28.620914, 77.136525);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:15,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+
+var infowindow = new google.maps.InfoWindow({
+  content:"Unclejoy"
+  });
+
+google.maps.event.addListener(marker, 'click', function() {
+  infowindow.open(map,marker);
+  });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+</head>
+<body>
+	<nav class="navbar navbar-default" style="min-height:90px;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <img width="70" height="70" alt="Brand" src="logo.png">
+      </a>
+      </div>
+       <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">How it Works ?</a></li>
+        <li><a href="#">Our store Listings</a></li>		
+        <li><a href="#">Be a store partner</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Store Login</a></li>
+      </ul>
+    </div>
+  </div>
+
+</nav>
+
+  <h1 align="center">..Reach us here..</h1>
+
+  
+<br>
+<div class="container">
+<br>
+<br>
+  <div class="row">
+        
+      <div class="col-md-4" style="border-right:2px dashed #666;"> <h4><b>Call us</b></h4> <br> <p class="glyphicon glyphicon-earphone">&nbsp;0101010101</p><br><br><br><br>
+      <h4> <b>E-mail</b></h4><p class="glyphicon glyphicon-envelope">&nbsp;Help@unclejoy.in</p><br><br><br><br><h4><b>Social Media </b></h4><br>
+                           <a href="" style="font-size:20px;"><i style="margin-right:20px;" class="fa fa-facebook"></i></a>
+                           <a href="" style="font-size:20px;"><i style="margin-right:20px;" class="fa fa-twitter"></i></a>
+                           <a href="" style="font-size:20px;"><i style="margin-right:20px;" class="fa fa-linkedin"></i></a><br><br></div>
+    </div>
+      <div class="col-md-4" style="border-right:2px dashed #666;">
+      <h4 ><b>Address</b></h4><br>
+       <p>Unclejoy Pvt. Ltd. <br>CB-153/9 First Floor, <br>Naraina Vihar <br>Ring Road. <br>New Delhi - 110028</p>
+        <div  style="min-height: 200px; width:100%;" id="googleMap"></div>
+      </div>
+      <div  class="col-md-4"><h4><b>Write to us</b></h4><br>
+      <form action="" >
+      <div class="form-group">
+        <input type="name"  class="form-control input-md" style="border-radius:0px;" placeholder="Name" required=""></input>
+         </div>
+      <div class="form-group">
+         <input type="email"  class="form-control input-md" style="border-radius:0px;" placeholder="Email" required=""></input>
+      </div>
+      <div class="form-group">
+         <input type="text" class="form-control input-md"  style="border-radius:0px;" placeholder="Phone-No." required=""></input>
+      </div>
+      <div class="form-group">
+         <textarea type="text"  class="form-control input-md" style="border-radius:0px;" rows=4 placeholder="Your message" required=""></textarea>
+      </div><br>
+      <div class="form-group">
+        <a href="" style="border-radius:0px;" class="btn btn-info btn-md ">Send</a>
+      </div>
+      </form>
+      </div>
+      
+  </div>
+
+    <br>
+    
+</div>
+<br>
+<footer>
+  <div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <ul>      
+     <li><a href="">Why Unclejoy?</a></li>
+     <li><a href="">Get your store listed.</a></li>
+     <li><a href="">How it works ?</a></li>
+     </ul>
+    </div>
+    <div class="col-md-3">
+    <ul type="none;">      
+     <li><a href="">Terms and Conditions</a></li>
+     <li><a href="">Privacy Policy</a></li>
+     <li><a href="">FAQs</a></li>
+    </ul>
+
+    </div>
+    <div class="col-md-3">
+      <ul>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="">Team</a></li>
+        <li><a href="">Blog</a></li>
+      </ul>
+       
+      
+     </div>  
+    <div class="col-md-3">
+      <ul>      
+     <li><p style="color:#fff;">About the company</p></li>
+     <li><p>UNCLEJOY is an online web platform for booking local hardware, electricals, paint and wood & timber material store.</p></li></ul>
+     
+     
+    </div>
+    </div>
+  
+  </div>
+ <div class="row" id="row2">
+   <div class="col-md-12">
+    <ul style="text-align:center">
+    <li><a href=""><i class="fa fa-facebook"></i></a></li>
+    <li><a href=""><i class="fa fa-twitter"></i></a></li>
+    <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+    </ul>
+    </div>
+    <p>2015-16 &copy; Unclejoy Technology Private Limited - All rights reserved</p>
+  </div>  
+
+</footer>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6
+A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</body>
+</html>

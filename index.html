@@ -46,10 +46,32 @@
 
 
 </div>
-<div  class="container"> 
+
+<div  class="container">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<div class="row">
+<div class="col-md-offset-3 col-md-6 change">
+ <p style="font-size:30px;">The easiest way to hire </p> 
+<div id="text_slider">
+  <div> <p> Hardware Material </p></div>
+  <div> <p> Building Material </p></div>
+  <div> <p> Electrical Material </p></div>
+  <div> <p> Paint Material  </p></div>
+  <div> <p> Wood and Timber </p></div>
+</div>
+<script>
+$("#text_slider div:gt(0)").hide();
+ setInterval(function()  {
+  $('#text_slider div:first')
+   .fadeOut(500).next().fadeIn(1000).end().appendTo('#text_slider');
+   }, 3000);
+
+</script>
+</div>
+</div>
 <div class="row">
   <div id="howitworks" class="col-md-12">
-  <h2> How it works? </h2>
+  <h2> HOW IT WORKS ? </h2>
   <h3>Book a trusted local store in 4 simple steps</h3>
    </div>
 
@@ -77,7 +99,7 @@
  <p style="padding-bottom:55px;"></p>
    <div  class="row" style="padding-right:40px; padding-left:40px;">
      <div id="why" class="col-md-12">
-     <h2>Why UncleJoy ?</h2> 
+     <h2>WHY UNCLEJOY ?</h2> 
      <br>
     <div class="row" id="whyuj">
    <div  class="col-md-4 rb">
@@ -99,8 +121,8 @@
   <div id="download_btn" class="row">
   <h2> <center>Download our App</center></h2><br>
     <div class="col-md-2"></div>
-    <div class="col-md-4" style="border-right:2px solid #e9e9e9;"><h4><b>Users</b></h4> <br><a href="#""><img width="200" src="googleplay.png"/></a><br> Coming Soon....</div>
-    <div class="col-md-4"><h4><b>Store</b></h4> <br><a href="#"><img width="200" src="googleplay.png"/></a><br>Download Now</div>
+    <div class="col-md-4" style="border-right:2px solid #e9e9e9;"><h4><b>For Users &amp; Professionals</b></h4> <br><a href="#""><img width="200" src="googleplay.png"/></a><br> Coming Soon....</div>
+    <div class="col-md-4"><h4><b>For Store Partners</b></h4> <br><a href="#"><img width="200" src="googleplay.png"/></a><br>Coming soon....</div>
     <div class="col-md-2"></div>
 
   </div>
@@ -109,31 +131,24 @@
 <footer>
   <div class="container">
   <div class="row">
-    <div class="col-md-3">
-      <ul>      
-     <li><a href="">Why Unclejoy?</a></li>
-     <li><a href="">Get your store listed.</a></li>
-     <li><a href="">How it works ?</a></li>
-     </ul>
-    </div>
-    <div class="col-md-3">
+    
+    <div class="col-md-4">
     <ul type="none;">      
      <li><a href="">Terms and Conditions</a></li>
      <li><a href="">Privacy Policy</a></li>
-     <li><a href="">FAQs</a></li>
     </ul>
 
     </div>
-    <div class="col-md-3">
+    <div class="col-md-4">
       <ul>
         <li><a href="contact_us.html">Contact Us</a></li>
-        <li><a href="">Team</a></li>
-        <li><a href="">Blog</a></li>
+        <li><a href="">FAQs</a></li>
+       
       </ul>
        
       
      </div>  
-    <div class="col-md-3">
+    <div class="col-md-4">
       <ul>      
      <li><p style="color:#fff;">About the company</p></li>
      <li><p>UNCLEJOY is an online web platform for booking local hardware, electricals, paint and wood & timber material store.</p></li></ul>
@@ -160,5 +175,14 @@
 A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
+
+
 </body>
 </html>
+
+
+
+

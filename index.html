@@ -50,23 +50,22 @@
 <div  class="container">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <div class="row">
-<div class="col-md-offset-3 col-md-6 change">
- <p style="font-size:30px;">The easiest way to hire </p> 
-<div id="text_slider">
-  <div> <p> Hardware Material </p></div>
-  <div> <p> Building Material </p></div>
-  <div> <p> Electrical Material </p></div>
-  <div> <p> Paint Material  </p></div>
-  <div> <p> Wood and Timber </p></div>
-</div>
-<script>
-$("#text_slider div:gt(0)").hide();
- setInterval(function()  {
-  $('#text_slider div:first')
-   .fadeOut(500).next().fadeIn(1000).end().appendTo('#text_slider');
-   }, 3000);
+<div class="col-md-offset-2 col-md-8 change">
+  <p style="font-size:25px;">The easiest way to hire <b><span id="rotate">Local Material Store</span></b> for your needs</p>
 
-</script>
+ 
+   <script> 
+   var terms = ["Hardware Material Store","Building Material Store", "Electric Material Store", "Paint Material Store","Wood and timber Store"];
+
+function rotateTerm() {
+  var ct = $("#rotate").data("term") || 0;
+  $("#rotate").data("term", ct == terms.length -1 ? 0 : ct + 1).text(terms[ct]).fadeIn()
+              .delay(2000).fadeOut(200, rotateTerm);
+}
+$(rotateTerm);
+
+
+  </script>
 </div>
 </div>
 <div class="row">
@@ -142,7 +141,7 @@ $("#text_slider div:gt(0)").hide();
     <div class="col-md-4">
       <ul>
         <li><a href="contact_us.html">Contact Us</a></li>
-        <li><a href="">FAQs</a></li>
+        <li><a href="faq.html">FAQs</a></li>
        
       </ul>
        

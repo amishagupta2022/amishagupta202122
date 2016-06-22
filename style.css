@@ -58,8 +58,8 @@ div.navbar-header img{
 .btn-warning {
 
 	font-weight: 600;
-    background: #fff;
-    color: #FF6600;
+    
+    color: #000;
     font-size: 13px;
     padding-right: 30px;
     padding-left: 30px;
@@ -321,26 +321,9 @@ border-right:1px dashed #666;
 
 	margin-top: 70px;
 	text-align: center;
-}
-#text_slider
-{
-	margin-bottom: 90px;
-	font-size: 25px;
-	text-align: center;
+	color:rgba(255, 102, 0, 1);
 }
 
-#text_slider p{
-
-text-align: center;
-font-size:20px;
-font-weight: 600;
-
-
-
-}
-#text_slider div{
-	 position: absolute;
-    left: 200px;
 
 	
 }
@@ -349,3 +332,41 @@ font-weight: 600;
 	
 }
 
+#faq_heading{
+	text-align:center;
+}
+.faqjumbo{
+	background-image: url("78.jpg");
+	height: 500px;
+}
+#faq2{
+	padding: 30px 50px 30px 50px;
+	background-color: rgba(255, 255, 255, 0.5);
+	color: #000;
+
+}
+.faqpage{
+	background-color: white;
+}
+
+a[aria-expanded=true] .glyphicon-chevron-right {
+   display: none;
+}
+a[aria-expanded=false] .glyphicon-chevron-down {
+   display: none;
+}
+a[aria-expanded=true] .glyphicon-plus {
+   display: none;
+}
+a[aria-expanded=false] .glyphicon-minus {
+   display: none;
+}
+#questions :visited{
+	text-decoration: none;
+}
+#questions :hover{
+	text-decoration: none;
+}
+#questions :active{
+	text-decoration: none;
+}

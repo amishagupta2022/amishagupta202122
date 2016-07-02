@@ -15,6 +15,7 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
       <link rel="stylesheet" type="text/css" href="style2.css">
   </head>
+    
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
@@ -32,6 +33,21 @@ $("#upload").hide();
     
 });
 </script>
+
+
+
+
+ <script>
+       function check()
+       {
+         (typeof $('[name=radio-group]:checked').val() != "undefined")
+       {
+          $('#sub').html(  $('[name=radio-group]:checked').val());
+        }  
+       }
+              
+
+            </script>
   <body>
 
   
@@ -39,55 +55,59 @@ $("#upload").hide();
 
 
    <div class="row" id="list" >
-    <div class="col-md-offset-3 col-md-6" id="booking">
-     <div class="panel panel-default">
-      <div class="panel-body">
+    <div class="col-md-offset-2 col-md-8" id="booking" >
+     
+      <div class="heading" >
             *Store list* 
         <div class="pull-right">
       	 <img src="#" alt="vector-icon" class="img-responsive">
         </div>
       </div>
-    </div>
+      <form id="sub-options" style="margin-left:20px;">
          <div>
-            <input id="radio-1" class="radio-custom" name="radio-group" type="radio" checked>
+            <input id="radio-1" class="radio-custom" name="radio-group" type="radio" value="1">
             <label for="radio-1" class="radio-custom-label">1st Choice</label>
         </div>
         <div>
-            <input id="radio-2" class="radio-custom" name="radio-group" type="radio">
+            <input id="radio-2" class="radio-custom" name="radio-group" type="radio" value="2">
             <label for="radio-2" class="radio-custom-label">2nd Choice</label>
         </div>
         <div>
-            <input id="radio-3" class="radio-custom" name="radio-group" type="radio">
+            <input id="radio-3" class="radio-custom" name="radio-group" type="radio" value="3">
             <label for="radio-3" class="radio-custom-label">3rd Choice</label>
         </div>
           <div>
-            <input id="radio-4" class="radio-custom" name="radio-group" type="radio" checked>
+            <input id="radio-4" class="radio-custom" name="radio-group" type="radio" value="4">
             <label for="radio-4" class="radio-custom-label">4th choice</label>
         </div>
         <div>
-            <input id="radio-5" class="radio-custom"name="radio-group" type="radio">
+            <input id="radio-5" class="radio-custom" name="radio-group" type="radio" value="5">
             <label for="radio-5" class="radio-custom-label">5th Choice</label>
-        </div><br><br>
-         <div class="row">
-    <div class="col-md-6" style="padding-right:0px;">
-     <a href="list.html"><button class="btn-default  btn btn-block" id="back1">Back </button></a></div>
-    <div class="col-md-6"  style="padding-left:0px;">
-     <button class="btn-success pull-right btn btn-block" id="next1">Next </button>
+        </div></form><br><br>
+      
+
+         
+    <div class="col-md-6" style="padding-right:0px; padding-left:0px;">
+
+     <button class="btn-warning  btn btn-block" id="back1"> BACK</button></div>
+    <div class="col-md-6"  style="padding-left:0px; padding-right:0px;">
+    <button class="btn-warning pull-right btn btn-block" id="next1" onclick="check();">NEXT</button>
      </div>
-      </div>
+       
    
    </div>
 </div>
   
        <div class="row" id="upload">
-    <div class="col-md-offset-3 col-md-6" id="booking">
-     <div class="panel panel-default">
-      <div class="panel-body">
-            <p style="margin-left:24px;">*Store type* <img src="#" alt="vector-icon" class="img-responsive pull-right"> </p><p><span class="glyphicon glyphicon-check"></span>  *selected sub-type* </p> 
+    <div class="col-md-offset-2 col-md-8" id="booking">
+     <div class="panel panel-default ">
+      <div class="panel-body heading">
+            <p style="margin-left:24px;">*Store type* <img src="#" alt="vector-icon" class="img-responsive pull-right"> </p><p style="margin-left:24px;"><span class="glyphicon glyphicon-check"></span> <span id ="sub"></span>
+                                     </p> 
                    
       </div>
     </div>
-    <p id="uploadtext"> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+    <p id="uploadtext" style="margin-left:20px; margin-right: 20px;"> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit<br>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit<br>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit </p>
     <script>
 $(document).ready(function(){
     $("#to_toggle").click(function(){
@@ -97,19 +117,19 @@ $(document).ready(function(){
       </script>
 
 
-
+       
     <div id="up">
-    <h4><b> Upload the material list</b>&nbsp;<span class="glyphicon glyphicon-upload"></span></h4><input type="file"></div>
+    <h4 style="margin-left:20px;"><b> Upload the material list</b>&nbsp;<span class="glyphicon glyphicon-upload"></span></h4><input type="file" style="margin-left:20px;"> </div>
     <div class="checkbox">
-    <label><input type="checkbox" id="to_toggle">I don't have a list</label>
+    <label style="margin-left:20px;"><input type="checkbox" id="to_toggle" >I don't have a list</label>
 </div><br>
-   <div class="row">
-    <div class="col-md-6" style="padding-right:0px;">
-     <button class="btn-default  btn btn-block" id="back2">Back </button></div>
-    <div class="col-md-6"  style="padding-left:0px;">
-     <button class="btn-success pull-right btn btn-block" id="next2">Next </button>
+   
+    <div class="col-md-6" style="padding-right:0px; padding-left:0px;">
+     <button class="btn-warning  btn btn-block" id="back2">BACK</button></div>
+    <div class="col-md-6"  style="padding-left:0px; padding-right:0px;">
+     <button class="btn-warning pull-right btn btn-block" id="next2">NEXT</button>
      </div>
-      </div>
+    
    </div>
   
   </div>

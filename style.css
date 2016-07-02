@@ -171,7 +171,7 @@ text-align: center;
   right: 1%;
   top: 45%;
 }
- ul.nav-pills li :hover{
+ ul#pills li :hover{
 
 background-color:lightblue;
 color:#fff;
@@ -361,12 +361,53 @@ a[aria-expanded=true] .glyphicon-plus {
 a[aria-expanded=false] .glyphicon-minus {
    display: none;
 }
-#questions :visited{
+#questions :visited, #questions :active , #questions :hover{
 	text-decoration: none;
 }
-#questions :hover{
-	text-decoration: none;
+
+@media only screen and (max-width: 767px) {
+#faq2{
+	visibility: hidden;
 }
-#questions :active{
-	text-decoration: none;
+
+}
+
+#user_dashboard > img{
+	width:40%;
+
+
+}
+#open_leads{
+	font-weight: 600;
+	font-size: 15px;
+}
+#responded_leads{
+	font-weight: 600;
+	font-size: 15px;
+}
+
+#hire-btn{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.row_border{
+	border-top: solid #000;
+	
+	border-spacing: 10px;
+}
+ ul.lol li :hover, ul.lol li :active, ul.lol li :visited{
+
+background-color: #00004d;
+color:#fff;
+}
+ul.lol li{
+	background-color: lightblue;
+}
+#mypro{
+	border: none;
+	
+}
+.btn {
+	border-radius: 0px;
 }

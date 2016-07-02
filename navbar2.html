@@ -16,11 +16,37 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script>
+ $(document).ready(function(){
+$("#open_leads").show();
+$("#responded_leads").hide();
+ $("#hired_leads").hide();
+$("#pill1").click(function(){
+        $("#open_leads").show();
+        $("#responded_leads").hide();
+        $("#hired_leads").hide();
+    });
+    $("#pill2").click(function(){
+       $("#open_leads").hide();
+        $("#responded_leads").show();
+        $("#hired_leads").hide();
+    });
+    $("#pill3").click(function(){
+       $("#open_leads").hide();
+        $("#responded_leads").hide();
+        $("#hired_leads").show();
+    });
+  
+  
+    
+});
+</script>
 <body>
   <nav class="navbar navbar-default" style="min-height:90px;">
   <div class="container-fluid" style="padding-right:50px;">
     <div class="navbar-header">
-      <a class="navbar-brand" href="index.html">
+      <a class="navbar-brand" href="#">
         <img width="70" height="70" alt="Brand" src="logo.png">
       </a>
       </div>
@@ -32,10 +58,9 @@
     <a href="" class="dropdown-toggle " data-toggle="dropdown">
     <span class="glyphicon glyphicon-menu-down"></span></a>
     <ul class="dropdown-menu" id="sma">
-      <li><a href="#">Profile</a></li>
-      <li><a href="#">Dashboard</a></li>
-      <li><a href="#">My Transactions</a></li>
-      <li><a href="#">Help</a></li>
+      <li><a href="navbar2.html">Leads</a></li>
+      <li><a href="myprofile.html">My Profile</a></li>
+      <li><a href="#">FAQ</a></li>
       <li><a href="#">Logout</a></li>
     </ul>
   </li>
@@ -47,14 +72,120 @@
 <div class="container">
   <div class="row">
     <div class="col-md-8">
-      <ul id="udpills" class="nav nav-pills nav-justified">
-        <li class="active"><a href="#">Open Leads</a></li>
-        <li><a href="#">Responded</a></li>
-        <li><a href="#">Hired</a></li>
-      </ul>
+      <ul class="nav nav-pills nav-justified lol">
+        <li ><a id="pill1" href="#open_leads">Open Leads</a></li>
+        <li><a id="pill2"  href="#">Responded</a></li>
+        <li><a id="pill3"  href="#">Hired</a></li>
+      </ul><br>
+      <div class="well" id="open_leads">
+       <div class="row">
+        <div class="col-md-4">
+         <h4> Sonali Singh </h4>
+       
+        <h5 style="font-weight:600;">Hardware Material Required</h5><span class="glyphicon glyphicon-list-alt"></span><a href="#"> View material list </a><br>
+        <p>25th June 2016 <br> 12:22 p.m </p>
+        </div>
+        <div class="col-md-offset-4 col-md-4" id="user_dashboard">
+             <span class="label label-warning pull-right" id="dash_labels" >Open</span><br><br>
+            <span class="pull-right"><img src="clock.png"  style="width:15%;"> &nbsp;1 hour ago </span><br><br>
+              <ul type="bullets">
+              <li> Adree city,South city-2,Gurgaon,Haryana,India </li>
+              </ul>
+       </div>
+      </div>
+      </div>
+        <div class="well" id="responded_leads" >
+       <div class="row" >
+       <div class="col-md-4">
+           <h4> Sonali Singh</h4>
+       
+             <h5 style="font-weight:600;">Hardware Material Required</h5><span class="glyphicon glyphicon-list-alt"></span><a href="#"> View material list </a><br>
+            <p>25th June 2016 <br> 12:22 p.m </p>
+           </div>
+              <div class="col-md-offset-4 col-md-4" id="user_dashboard">
+                <span class="label label-warning pull-right" id="dash_labels" >Request</span><br><br>
+                <span class="pull-right"><img src="clock.png"  style="width:15%;"> &nbsp;1 hour ago </span><br><br>
+                <ul type="bullets">
+                <li> Adree city,South city-2,Gurgaon,Haryana,India </li>
+               </ul>
+           </div>
+
+              
+          </div>
+          <br>
+          <div class="row row_border">
+            <div class="col-md-4">
+              <h4> Store name </h4>
+              <ul type="bullets">
+                <li> Adree city,South city-2,Gurgaon,Haryana,India </li>
+               </ul> 
+              <img src="#" class="img-responsive">
+            </div>
+            <div class="col-md-offset-4 col-md-4">
+              <span class="label label-warning pull-right" id="dash_labels" >Responded</span><br><br>
+              <span class="pull-right"><img src="clock.png"  style="width:15%;"> &nbsp;1 hour ago </span><br><br><br>
+               <br>
+              <button type="button" class="btn btn-success btn-large pull-left">View Profile</button>
+              <button type="button" class="btn btn-success btn-large pull-right" id="hire-btn">Hire</button><br>
+            </div>
+
+          </div><br>
+           <div class="row row_border">
+            <div class="col-md-4">
+              <h4> Store name </h4>
+              <ul type="bullets">
+                <li> Adree city,South city-2,Gurgaon,Haryana,India </li>
+               </ul> 
+              <img src="#" class="img-responsive">
+            </div>
+            <div class="col-md-offset-4 col-md-4">
+              <span class="label label-warning pull-right" id="dash_labels" >Responded</span><br><br>
+              <span class="pull-right"><img src="clock.png"  style="width:15%;"> &nbsp;1 hour ago </span><br><br><br>
+               <br>
+              <button type="button" class="btn btn-success btn-large pull-left">View Profile</button>
+              <button type="button" class="btn btn-success btn-large pull-right" id="hire-btn">Hire</button><br>
+            </div>
+
+          </div>
+
+
+      </div>
+      <div class="well" id="hired_leads">
+        <div class="row">
+        <div class="col-md-4">
+         <h4> Sonali Singh </h4>
+       
+        <h5 style="font-weight:600;">Hardware Material Required</h5><span class="glyphicon glyphicon-list-alt"></span><a href="#"> View material list </a><br>
+        <p>25th June 2016 <br> 12:22 p.m </p>
+        </div>
+        <div class="col-md-offset-4 col-md-4" id="user_dashboard">
+             <span class="label label-warning pull-right" id="dash_labels" >Request</span><br><br>
+            <span class="pull-right"><img src="clock.png"  style="width:15%;"> &nbsp;1 hour ago </span><br><br>
+              <ul type="bullets">
+              <li> Adree city,South city-2,Gurgaon,Haryana,India </li>
+              </ul>
+       </div>
+      </div>
+      <div class="row row_border">
+            <div class="col-md-4">
+              <h4> Store name </h4>
+              <ul type="bullets">
+                <li> Adree city,South city-2,Gurgaon,Haryana,India </li>
+               </ul> 
+              <img src="#" class="img-responsive">
+            </div>
+            <div class="col-md-offset-4 col-md-4">
+              <span class="label label-warning pull-right" id="dash_labels" >Responded</span><br><br>
+              <span class="pull-right"><img src="clock.png"  style="width:15%;"> &nbsp;1 hour ago </span><br><br><br>
+              <button type="button" class="btn btn-success btn-large pull-left">View Profile</button>
+              <button type="button" class="btn btn-success btn-large pull-right" id="hire-btn">Call</button>
+            </div>
+
+          </div>
+      </div>
     </div>
   </div>
-</div>
+ </div>
 
 
 
